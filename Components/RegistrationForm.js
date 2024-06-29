@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, TextInput } from 'react-native';
+import { View, Text, StyleSheet, Image, TextInput, Button } from 'react-native';
 
 export default function RegistrationForm() {
   return (
@@ -27,6 +27,8 @@ export default function RegistrationForm() {
           keyboardType='password'
           autoCapitalize='none'
         />
+
+        <Button style={styles.btn} title='submit'/>
       </View>
     </View>
   );
@@ -56,6 +58,9 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     marginTop: 20,
     paddingHorizontal: 15,
+
+  },
+  btn:{
 
   }
 });
