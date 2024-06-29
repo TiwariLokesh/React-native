@@ -11,11 +11,21 @@ export default function RegistrationForm() {
         />
       </View>
 
-      <View style={{ marginTop:100}}>
+      <View style={{ marginTop:50}}>
         <Text style={styles.heading}>Login</Text>
 
         <TextInput
+        style={styles.input}
           placeholder='Email'
+          keyboardType='email-address'
+          autoCapitalize='none'
+        />
+
+<TextInput
+        style={styles.input}
+          placeholder='Password'
+          keyboardType='password'
+          autoCapitalize='none'
         />
       </View>
     </View>
@@ -28,7 +38,7 @@ const styles = StyleSheet.create({
    padding:20,
   },
   image: {
-    marginTop:10,
+    marginTop:50,
     width: 300,
     height: 300,
     resizeMode: 'contain',
@@ -39,4 +49,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#00796b',
   },
+  input:{
+    height: 40,
+    borderColor: '#00796b',
+    borderWidth: 1,
+    borderRadius: 50,
+    marginTop: 20,
+    paddingHorizontal: 15,
+
+  }
 });
