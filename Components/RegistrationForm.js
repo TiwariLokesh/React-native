@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, TextInput, Button } from 'react-native';
+import { View, Text, StyleSheet, Image, TextInput, Button,Pressable} from 'react-native';
 
 export default function RegistrationForm() {
   return (
@@ -11,7 +11,7 @@ export default function RegistrationForm() {
         />
       </View>
 
-      <View style={{ marginTop:50}}>
+      <View style={{ marginTop:10, flexDirection:'column', gap:15}}>
         <Text style={styles.heading}>Login</Text>
 
         <TextInput
@@ -28,9 +28,30 @@ export default function RegistrationForm() {
           autoCapitalize='none'
         />
 
-        <Button style={styles.btn} title='submit'/>
+<Pressable style={styles.button}>
+      <Text style={styles.text}>Submit</Text>
+    </Pressable>
       </View>
-    </View>
+
+      <View>
+        <Text style={{textAlign:'center',marginTop:25,fontSize:15}}>Or login with</Text>
+      </View>
+
+      <View style={{flexDirection:'row', justifyContent:'space-around', alignItems:'center', marginTop:25}}>
+        <Image style={styles.logo} source={{uri:'https://w7.pngwing.com/pngs/249/19/png-transparent-google-logo-g-suite-google-guava-google-plus-company-text-logo.png'}}/>
+
+        <Image style={styles.logo} source={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWSzDnc0MUFbyQlB75CTxiUmVgc_sVw39l7w&s'}}/>
+
+        <Image style={styles.logo} source={{uri:'https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png'}}/>
+
+      </View>
+
+      <View style={{justifyContent:'center',alignItems:'center',marginTop:30,fontSize:15}}>
+<Text style={{color:"#000",fontWeight:'bold'}}>New to the app? <Text style={{color:"#f58d88"}}>Register</Text></Text>
+      </View>
+
+      </View>
+
   );
 }
 
@@ -56,11 +77,29 @@ const styles = StyleSheet.create({
     borderColor: '#00796b',
     borderWidth: 1,
     borderRadius: 50,
-    marginTop: 20,
     paddingHorizontal: 15,
-
   },
-  btn:{
-
+  button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 32,
+    borderRadius: 30,
+    backgroundColor: '#f58d88',
+  },
+  text: {
+    fontSize: 16,
+    lineHeight: 21,
+    fontWeight: 'bold',
+    letterSpacing: 0.25,
+    color: 'white',
+  },
+  logo:{
+    width:40,
+    height:40,
+    resizeMode:'contain',
+    borderWidth:2,
+    borderColor:"#b4b3b3",
+    paddingHorizontal:40,    
   }
 });
