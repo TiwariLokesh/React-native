@@ -1,9 +1,10 @@
 import React from 'react';
 import {View} from 'react-native';
-import Calculator from './Components/Calculator';
+// import Calculator from './Components/Calculator';
 // import Remote from './Components/Remote';
 // import OtpForm from './Components/OtpForm';
 // import RegistrationForm from './Components/RegistrationForm';
+import Count from './Components/Count';
 // import CV from './Components/CV';
 export default function App() {
   return (
@@ -12,7 +13,8 @@ export default function App() {
       {/* <RegistrationForm /> */}
       {/* <OtpForm/> */}
       {/* <Remote/> */}
-      <Calculator/>
+      {/* <Calculator/> */}
+      <Count/>
     </View>
   )
 }
