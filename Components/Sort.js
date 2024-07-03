@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
-export default function SortThreeValues() {
+export default function Sort() {
   const [A, setA] = useState('');
   const [B, setB] = useState('');
   const [C, setC] = useState('');
