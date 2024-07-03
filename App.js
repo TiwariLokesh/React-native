@@ -8,7 +8,8 @@ import {View} from 'react-native';
 // import CV from './Components/CV';
 // import Counting from './Components/Counting';
 // import Sort from './Components/Sort';
-import BillingSystem from './Components/BillingSystem';
+// import BillingSystem from './Components/BillingSystem';
+import BudgetSystem from './Components/BudgetSystem';
 export default function App() {
   return (
     <View>
@@ -20,7 +21,8 @@ export default function App() {
       {/* <Count/> */}
       {/* <Counting/> */}
       {/* <Sort/> */}
-      <BillingSystem/>
+      {/* <BillingSystem/> */}
+      <BudgetSystem/>
     </View>
   )
 }
