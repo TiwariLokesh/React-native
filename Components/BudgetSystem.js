@@ -39,14 +39,14 @@ export default function BudgetSystem() {
       <Button title="Calculate" onPress={calculateBalance} color="#00796b" />
 
       <View style={styles.resultContainer}>
-        <Text style={styles.resultText}>Initial Budget: ${budget}</Text>
+        <Text style={styles.resultText}>Initial Budget: Rs.{budget}</Text>
         <Text
           style={[
             styles.resultText,
             { color: balance >= budget ? 'green' : 'red' }
           ]}
         >
-          Current Balance: ${balance.toFixed(2)}
+          Current Balance: Rs.{balance.toFixed(2)}
         </Text>
       </View>
     </View>
