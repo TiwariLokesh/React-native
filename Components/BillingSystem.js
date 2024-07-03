@@ -45,9 +45,9 @@ export default function BillingSystem() {
       <Button title="Calculate" onPress={calculateBill} color="#00796b" />
 
       <View style={styles.resultContainer}>
-        <Text style={styles.resultText}>Net Bill: ${netBill.toFixed(2)}</Text>
+        <Text style={styles.resultText}>Net Bill: Rs.{netBill.toFixed(2)}</Text>
         <Text style={styles.resultText}>Discount: 10%</Text>
-        <Text style={styles.resultText}>Payable Amount: ${payableAmount.toFixed(2)}</Text>
+        <Text style={styles.resultText}>Payable Amount: Rs.{payableAmount.toFixed(2)}</Text>
       </View>
     </View>
   );
@@ -55,7 +55,6 @@ export default function BillingSystem() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 16,
