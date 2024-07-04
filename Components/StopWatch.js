@@ -28,7 +28,7 @@ export default function Stopwatch() {
   return (
     <View style={styles.container}>
       <Text style={styles.time}>{(time / 1000).toFixed(2)}</Text>
-      <Button title="Start" onPress={startStopwatch} />
+      <Button style={{marginBottom:'50px'}} title="Start" onPress={startStopwatch} />
       <Button title="Stop" onPress={stopStopwatch} />
     </View>
   );
@@ -36,6 +36,7 @@ export default function Stopwatch() {
 
 const styles = StyleSheet.create({
   container: {
+  
     justifyContent: 'center',
     alignItems: 'center',
   },
