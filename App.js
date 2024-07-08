@@ -10,7 +10,8 @@ import {View} from 'react-native';
 // import Sort from './Components/Sort';
 // import BillingSystem from './Components/BillingSystem';
 // import BudgetSystem from './Components/BudgetSystem';
-import StopWatch from './Components/StopWatch';
+// import StopWatch from './Components/StopWatch';
+import Validation from './Components/Validation';
 export default function App() {
   return (
     <View>
@@ -24,7 +25,8 @@ export default function App() {
       {/* <Sort/> */}
       {/* <BillingSystem/> */}
       {/* <BudgetSystem/> */}
-      <StopWatch/>
+      {/* <StopWatch/> */}
+      <Validation/>
     </View>
   )
 }
